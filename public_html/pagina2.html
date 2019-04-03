@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lofi - Estude calmamente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="JS/bootstrap.min.js" type="text/javascript"></script>
+        <script src="JS/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="JS/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="JS/messages_pt_BR.min.js" type="text/javascript"></script>
+        
+        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        
+        <style>
+            .titulo{
+                color:white;
+                text-align: center;
+            }
+            .texto{
+                color: white;
+                font-family: inherit;
+            }
+            #aux2{
+                text-align: center;
+            }
+            #nujabes{
+                width: 60%;
+            }
+            @media only screen and (max-width: 479px) {
+                #nujabes{
+                    width: 100%;
+                }   
+            }
+            
+        </style>
+        
+    </head>
+      <body id="corpo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12" >
+                    <a href="index.html"><img src="images/lofi-logo3.jpg" alt="lofi-logo" class="img-fluid " id="imagemLogo"></a>
+                </div>
+                <div class="col-md-6 col-12 ">
+                     <input type="button" class="button" id="topbtn" value="Home" onclick="location.href='index.html'" >
+                    <input type="button" class="button" id="middlebtn1" value="O que está estudando?" onclick="location.href='pagina1.html'">   
+                    <input type="button" class="button" id="middlebtn2" value="O que é Lo-fi?" onclick="location.href='pagina2.html'">   
+                    <input type="button" class="button" id="bottombtn" value="Em breve">   
+                </div>
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                        
+                        <div class="col-12 col-md-6">
+                            <img src="images/gif1.gif" alt="" class="gif1"/>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3 class="titulo">O que é Lo-fi?</h3>
+                            <p class="texto">Lo-fi significa “Low fidelity” ou baixa fidelidade em português, esse termo foi criado pelo DJ William Berger, ele tinha um programa na rádio nos anos 80 que era específico para músicas “caseiras”.</p>
+                            <p class="texto" style="text-align: right">Na música, o lo-fi está associado a gravações de baixo orçamento. Hoje isso virou não só um estilo de gravação mas um movimento, virou algo muito maior do que você simplesmente gravar em baixa qualidade. O Lo-fi hip hop,por exemplo, está ligado à outros estilos músicais como o jazz, trip hop, vaporwave entre outros.</p>
+                        </div>
+                            <div class="col-12 col-md-6">
+                                <h4 class="titulo">O que é Lo-fi hip hop?</h4>
+                                <p class="texto">O Lo-fi hip hop é basicamente a interpretação atual do que é o Lo-fi. Nelas,as musicas são o antônimo de uma musica de hip hop,com notas simples e sons pouco agressivos.</p>
+                                <p class="texto" style="text-align: right">A criação de musicas nesse estilo é feita por compositores autônomos,ou seja,não existe um estúdio por trás das cortinas. No Brasil, este gênero musical foi criando espaço graças ao músico e produtor <a href="https://pt.wikipedia.org/wiki/Zeca_Viana">Zeca Viana</a>,através da sua série de coletâneas musicais <a href="https://soundcloud.com/recifelofi">Recife Lofi</a>. </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="images/gif2.gif" alt="" class="gif1"/>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 class="titulo">O Pioneiro do Lo-fi Hip hop: Nujabes</h4>
+                                <p class="texto">Jun Seba foi um produtor musical e DJ japonês, mais conhecido pelo nome artístico <b>Nujabes</b>, inversão do seu nome verdadeiro. Ele era dono das lojas de discos de Shibuya e fundador da produtora Hydeout Productions. Seu estilo mistura hip hop, rap e jazz. </p>
+                                <p class="texto" style="text-align: right">Uma das características mais marcantes no trabalho de Nujabes é a influência do jazz e do soul, usando samples de gravações de músicos como o pianista Bill Evans e renomado saxofonista Yusef Lateef, suas músicas costumam repassar experiências sinestésicas, essa idéia também transparece imaginário do encarte de seus CDs, onde retratam um estilo de arte particular, bem abstrato e colorido.</p>
+                                <p class="texto">O lo-fi hip hop teve grande influência das músicas de Nujabes,por trazerem experiências semelhantes tanto em sua forma quanto eu seu ritmo,ainda que um pouco suavizadas. Observe:</p>
+                                <audio controls  id="audio1">
+                                    <source src="sons/Nujabes - Aruarian dance.mp3" type="audio/mpeg">
+                                    Your browser does not support the <code>audio</code> tag.
+                                </audio>
+                                <audio controls id="audio2">
+                                    <source src="sons/The Deli - 532PM.mp3" type="audio/mpeg" >
+                                    Your browser does not support the <code>audio</code> tag.
+                                </audio>
+                            </div>
+                            <div class="col-12 col-md-6" id="aux2">
+                                <img src="images/nujabes.jpg" alt="" class="gif1" id="nujabes"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12"  id="divSoc">
+                
+                      <a href="https://www.facebook.com" target="_blank">   <img src="images/facebook.png" alt="" class="img-fluid social"  /></a>
+                  
+                  
+                  <a href="https://www.instagram.com/?hl=pt-br" target="_blank"> <img src="images/instagram.png" alt="" class="img-fluid social"/></a>
+                  
+                  <a href="https://twitter.com" target="_blank"> <img src="images/twitter.png" alt="" class="img-fluid social"/></a>
+           
+                 
+                </div>
+                <div class="col-md-6 col-12">
+                 <p id="Copyright">Este site tem como propósito apresentar um trabalho acadêmico. Todas suas informações aqui distribuídas podem ou não serem de cunho verídico. Não há nenhum vínculo com autor ou empresa real.</p>
+                  </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
